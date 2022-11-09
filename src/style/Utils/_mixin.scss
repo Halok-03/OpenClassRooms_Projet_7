@@ -1,0 +1,43 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin small {
+    @media screen and (min-width: 500px) {
+        @content;
+    }
+}
+
+@mixin tablette {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: 992px) {
+        @content;
+    }
+}
+
+@mixin content {
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+@mixin margin-body-small {
+    margin: 0 40px;
+}
+
+@mixin margin-body-tablette {
+    margin: 0 60px;
+}
+
+@mixin margin-body-desktop {
+    margin: 0 100px;
+}

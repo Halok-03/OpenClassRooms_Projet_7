@@ -1,0 +1,101 @@
+@import "../Utils/variables";
+@import "../Utils/mixin";
+
+* {
+    color: $primary-color
+}
+
+header {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @include small {
+        margin-top: 25px;
+    }
+
+    @include tablette {
+        margin-top: 30px;
+    }
+
+    @include desktop {
+        margin-top: 40px;
+    }
+
+    img {
+        height: 43.03px;
+
+        @include small {
+            height: 50.26px;
+        }
+
+        @include tablette {
+            height: 56.26px;
+        }
+
+        @include desktop {
+            height: 62.26px;
+        }
+    }
+
+    nav {
+        width: 100%;
+
+        ul {
+            position: relative;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: 100%;
+
+            li {
+
+                position: relative;
+                margin-left: 10px;
+
+                @include small {
+                    margin-left: 25px;
+                }
+
+                @include tablette {
+                    margin-left: 40px;
+                }
+
+                @include desktop {
+                    margin-left: 57px;
+                }
+
+                a {
+                    text-decoration: none;
+                    font-weight: 500;
+                    font-size: 12px;
+
+                    @include small {
+                        font-size: 18px;
+                    }
+
+                    @include tablette {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: $primary-color;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.nav-active::after,
+a:hover::after {
+    transform: scale(1);
+}
