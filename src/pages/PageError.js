@@ -3,6 +3,7 @@ import '../style/Pages/_page-error.scss';
 import Nav from '../components/Nav';
 
 const Page_404 = () => {
+    document.title = "Kasa - Error 404";
     return (
         <div className='body-margin'>
             <Nav />

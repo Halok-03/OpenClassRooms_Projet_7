@@ -1,0 +1,91 @@
+@import '../Utils/variables';
+@import '../Utils/mixin';
+
+.Banner {
+    position: relative;
+    margin-top: 16px;
+    background: #000000;
+    mix-blend-mode: darken;
+    border-radius: 10px;
+    height: 111px;
+
+    @include small {
+        height: 148px;
+        border-radius: 15px;
+        margin-top: 33px;
+    }
+
+    @include tablette {
+        height: 185px;
+        border-radius: 20px;
+        margin-top: 50px;
+    }
+
+    @include desktop {
+        height: 223px;
+        border-radius: 25px;
+        margin-top: 68px;
+    }
+
+    img {
+        position: relative;
+        width: 100%;
+        border-radius: 10px;
+        height: 100%;
+        opacity: 0.7;
+        object-fit: cover;
+
+        @include small {
+            border-radius: 15px;
+        }
+
+        @include tablette {
+            border-radius: 20px;
+        }
+
+        @include desktop {
+            border-radius: 25px;
+        }
+    }
+
+    h1 {
+        color: $secondary-color;
+        font-size: 24px;
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        transform: translate(-20%, -50%);
+        width: 65%;
+        font-weight: 500;
+
+        @include small {
+            position: absolute;
+            top: 50%;
+            left: 20%;
+            transform: translate(-20%, -50%);
+            width: 70%;
+            text-align: start;
+            font-size: 32px;
+        }
+
+        @include tablette {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            text-align: center;
+            font-size: 40px;
+        }
+
+        @include desktop {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            text-align: center;
+            font-size: 48px;
+        }
+    }
+}

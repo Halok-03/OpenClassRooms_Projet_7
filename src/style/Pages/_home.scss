@@ -1,9 +1,8 @@
 @import '../Utils/mixin';
 
 .body-margin {
-
+    position: relative;
     margin: 0 20px;
-    ;
 
     @include small {
         @include margin-body-small

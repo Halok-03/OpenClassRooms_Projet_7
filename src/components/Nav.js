@@ -6,7 +6,7 @@ import '../style/Components/_nav.scss'
 
 const Nav = () => {
     return (
-        <header>
+        <header id='header-nav'>
             <img src={Logo} alt="Logo Kasa" />
             <nav>
                 <ul>
