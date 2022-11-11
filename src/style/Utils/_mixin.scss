@@ -30,14 +30,16 @@
     left: 0;
 }
 
-@mixin margin-body-small {
-    margin: 0 40px
+@mixin margin-body ($margin-top, $margin-right, $margin-bottom, $margin-left) {
+    margin: $margin-top $margin-right $margin-bottom $margin-left;
 }
 
-@mixin margin-body-tablette {
-    margin: 0 60px
-}
-
-@mixin margin-body-desktop {
-    margin: 0 100px;
+@mixin line-clamp($lines, $line-height) {
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+    max-height: $lines * $line-height;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }

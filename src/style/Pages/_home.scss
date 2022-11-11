@@ -1,19 +1,2 @@
 @import '../Utils/mixin';
-
-.body-margin {
-    position: relative;
-    margin: 0 20px;
-
-    @include small {
-        @include margin-body-small
-    }
-
-    @include tablette {
-        @include margin-body-tablette
-    }
-
-    @include desktop {
-        @include margin-body-desktop
-    }
-
-}
+@import '../Utils/variables';

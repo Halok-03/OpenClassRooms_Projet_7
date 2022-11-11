@@ -1,2 +1,16 @@
 @import "./Base/reset";
 @import "./Base/font";
+
+
+//Styles Pages
+@import './pages/home';
+@import './pages/about';
+@import './pages/lodging';
+@import './pages/page-error';
+
+
+//Styles Components
+@import './components/banner';
+@import './components/card';
+@import './components/footer';
+@import './components/nav';

@@ -3,29 +3,31 @@
 
 .Banner {
     position: relative;
-    margin-top: 16px;
     background: #000000;
     mix-blend-mode: darken;
     border-radius: 10px;
     height: 111px;
+    margin: 16px 20px 0 20px;
+    width: auto;
 
     @include small {
+        @include margin-body(33px, 50px, 0, 50px);
         height: 148px;
         border-radius: 15px;
-        margin-top: 33px;
     }
 
     @include tablette {
+        @include margin-body(50px, 75px, 0, 75px);
         height: 185px;
         border-radius: 20px;
-        margin-top: 50px;
     }
 
     @include desktop {
+        @include margin-body(68px, 100px, 0, 100px);
         height: 223px;
         border-radius: 25px;
-        margin-top: 68px;
     }
+
 
     img {
         position: relative;

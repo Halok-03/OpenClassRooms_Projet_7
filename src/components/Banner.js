@@ -1,5 +1,4 @@
 import React from 'react';
-import '../style/Components/_banner.scss'
 
 const Banner = (props) => {
     return (
