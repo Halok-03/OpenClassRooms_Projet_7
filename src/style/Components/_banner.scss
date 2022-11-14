@@ -28,6 +28,11 @@
         border-radius: 25px;
     }
 
+    @include big-desktop {
+        @include margin-body(68px, auto, 0, auto);
+        max-width: 1250px;
+    }
+
 
     img {
         position: relative;

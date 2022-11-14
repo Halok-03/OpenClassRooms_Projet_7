@@ -23,6 +23,11 @@
         @include margin-body(40px, 100px, 0, 100px);
     }
 
+    @include big-desktop {
+        @include margin-body(40px, auto, 0, auto);
+        max-width: 1250px;
+    }
+
 
     img {
         height: 43.03px;

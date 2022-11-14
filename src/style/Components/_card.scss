@@ -20,6 +20,11 @@
         @include margin-body(43px, 100px, 0, 100px);
     }
 
+    @include big-desktop {
+        @include margin-body(43px, auto, 0, auto);
+        max-width: 1250px;
+    }
+
     ul {
 
         @include tablette {
