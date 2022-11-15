@@ -1,0 +1,128 @@
+.carrousel {
+    position: relative;
+    max-width: 1250px;
+    height: 255px;
+    margin-top: 30px;
+
+    @include small {
+        height: 308px;
+        margin-top: 28.4px;
+    }
+
+    @include tablette {
+        height: 361px;
+        margin-top: 26.8px;
+    }
+
+    @include desktop {
+        height: 415px;
+        margin-top: 25px;
+    }
+
+    @include big-desktop {
+        height: 468px;
+    }
+
+    img {
+        border-radius: 10px;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+
+        @include small {
+            border-radius: 15px;
+        }
+
+        @include tablette {
+            border-radius: 20px;
+        }
+
+        @include desktop {
+            border-radius: 25px;
+        }
+
+        @include big-desktop {
+            border-radius: 30px;
+        }
+    }
+
+    .chevron-carrousel {
+        height: auto;
+        height: 19.8px;
+        width: auto;
+        top: 0;
+        bottom: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+        transform: scale(1);
+        transition: 0.2s ease-in-out;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.3);
+        }
+
+        @include small {
+            height: 39.6px;
+        }
+
+        @include tablette {
+            height: 59.4px;
+        }
+
+        @include desktop {
+            height: 79.2px;
+        }
+
+        @include big-desktop {
+            height: 99px;
+        }
+    }
+
+    .chevron-carrousel-left {
+        position: absolute;
+        left: 5.84px;
+        rotate: (270deg);
+
+
+        @include small {
+            left: 11.68px;
+        }
+
+        @include tablette {
+            left: 17.52px;
+        }
+
+        @include desktop {
+            left: 23.36px;
+        }
+
+        @include big-desktop {
+            left: 29.2px;
+        }
+    }
+
+    .chevron-carrousel-right {
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        right: 5.84px;
+        rotate: (90deg);
+
+        @include small {
+            right: 11.68px;
+        }
+
+        @include tablette {
+            right: 17.52px;
+        }
+
+        @include desktop {
+            right: 23.36px;
+        }
+
+        @include big-desktop {
+            right: 29.2px;
+        }
+    }
+}
