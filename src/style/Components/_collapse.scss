@@ -5,24 +5,24 @@
     background-color: $background-color;
     border-radius: 5px;
     height: auto;
+    max-width: 1023px;
 
-    @include margin-body(20px, 20px, 0, 20px);
+    @include margin-body(20px, auto, 0, auto);
 
     @include small {
-        @include margin-body(23.6px, 50px, 0, 50px);
+        @include margin-body(23.6px, auto, 0, auto);
     }
 
     @include tablette {
-        @include margin-body(27.2px, 75px, 0, 75px);
+        @include margin-body(27.2px, auto, 0, auto);
     }
 
     @include desktop {
-        @include margin-body(31px, 100px, 0, 100px);
+        @include margin-body(31px, auto, 0, auto);
     }
 
     @include big-desktop {
         @include margin-body(34.6px, auto, 0, auto);
-        max-width: 1250px;
     }
 
     &-visible {

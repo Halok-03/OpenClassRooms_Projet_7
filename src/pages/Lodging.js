@@ -12,7 +12,7 @@ const Lodging = () => {
         <div className='body'>
             <div className="layout">
                 <Nav />
-                <h1>Hello from product</h1>
+                <h1>Hello from lodging</h1>
                 <FontAwesomeIcon icon={faStar} />
             </div>
             <Footer />

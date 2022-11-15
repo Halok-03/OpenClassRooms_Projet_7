@@ -1,0 +1,27 @@
+@import '../Utils/mixin';
+
+
+.body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .layout {
+        margin: 0 auto 22px auto;
+        max-width: 1240px;
+        width: 90%;
+
+        @include small {
+            margin: 0 auto 25px auto;
+        }
+
+        @include tablette {
+            margin: 0 auto 32.5px auto;
+        }
+
+        @include desktop {
+            margin: 0 auto 43px auto;
+
+        }
+    }
+}

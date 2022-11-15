@@ -4,25 +4,21 @@
 .Home-lodging {
     flex-direction: column;
     position: relative;
-    margin: 22px 20px 0 20px;
+    margin-top: 22px;
+    max-width: 1250px;
 
     @include small {
-        @include margin-body(25px, 50px, 0, 50px);
+        margin-top: 25px;
     }
 
     @include tablette {
-        @include margin-body(32.5px, 75px, 0, 75px);
+        margin-top: 32.5px;
         background-color: $background-color;
         border-radius: 25px;
     }
 
     @include desktop {
-        @include margin-body(43px, 100px, 0, 100px);
-    }
-
-    @include big-desktop {
-        @include margin-body(43px, auto, 0, auto);
-        max-width: 1250px;
+        margin-top: 43px;
     }
 
     ul {
@@ -57,14 +53,14 @@
                 }
 
                 @include desktop {
-                    transform: scale(1.2);
+                    transform: scale(1.15);
                 }
             }
 
             &:hover .description {
                 @include tablette {
                     opacity: 1;
-                    transform: scaleX(1);
+                    transform: scaleY(1);
                 }
             }
 
@@ -142,8 +138,9 @@
                     top: 20px;
                     padding: 0 15px;
                     opacity: 0;
-                    transform: scaleX(0);
-                    transition: 0.3s;
+                    transform: scaleY(0);
+                    transform-origin: top;
+                    transition: 0.3s 0.1s ease-in-out;
                     font-weight: 500;
                     font-size: 18px;
                     z-index: 1;

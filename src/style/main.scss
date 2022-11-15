@@ -1,6 +1,9 @@
 @import "./Base/reset";
 @import "./Base/font";
 
+//Styles Layout 
+@import './Layout/layout';
+
 //Styles Pages
 @import './pages/home';
 @import './pages/about';

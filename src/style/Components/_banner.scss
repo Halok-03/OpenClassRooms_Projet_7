@@ -7,32 +7,27 @@
     mix-blend-mode: darken;
     border-radius: 10px;
     height: 111px;
-    margin: 16px 20px 0 20px;
+    margin-top: 16px;
     width: auto;
+    max-width: 1250px;
 
     @include small {
-        @include margin-body(33px, 50px, 0, 50px);
+        margin-top: 33px;
         height: 148px;
         border-radius: 15px;
     }
 
     @include tablette {
-        @include margin-body(50px, 75px, 0, 75px);
+        margin-top: 50px;
         height: 185px;
         border-radius: 20px;
     }
 
     @include desktop {
-        @include margin-body(68px, 100px, 0, 100px);
+        margin-top: 68px;
         height: 223px;
         border-radius: 25px;
     }
-
-    @include big-desktop {
-        @include margin-body(68px, auto, 0, auto);
-        max-width: 1250px;
-    }
-
 
     img {
         position: relative;
