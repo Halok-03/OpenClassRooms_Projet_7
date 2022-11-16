@@ -3,6 +3,7 @@
     max-width: 1250px;
     height: 255px;
     margin-top: 30px;
+    // overflow: hidden;
 
     @include small {
         height: 308px;
@@ -23,11 +24,11 @@
         height: 468px;
     }
 
-    img {
-        border-radius: 10px;
+    .photo {
         height: 100%;
         width: 100%;
         object-fit: cover;
+        border-radius: 10px;
 
         @include small {
             border-radius: 15px;
@@ -125,4 +126,27 @@
             right: 29.2px;
         }
     }
+
+    .counter-carrousel {
+        display: none;
+        color: $secondary-color;
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        bottom: 25px;
+        font-size: 18px;
+        font-weight: 500;
+
+        @include tablette {
+            display: block;
+        }
+
+        @include big-desktop {
+            font-size: 24px;
+        }
+    }
+}
+
+.display-none {
+    display: none;
 }

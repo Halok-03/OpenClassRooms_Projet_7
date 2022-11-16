@@ -1,1 +1,265 @@
 @import '../Utils/mixin';
+@import '../Utils/variables';
+
+.lodging {
+    margin-top: 15px;
+    width: 100%;
+
+    @include small {
+        margin-top: 20px;
+    }
+
+    @include tablette {
+        margin-top: 25px;
+    }
+
+    @include desktop {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    @include big-desktop {
+        margin-top: 35px;
+    }
+
+    .lodging-description {
+        @include desktop {
+            max-width: 70%;
+        }
+
+        .lodging-title {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 25px;
+
+            @include small {
+                font-size: 24px;
+                line-height: 33px;
+            }
+
+            @include tablette {
+                font-size: 30px;
+                line-height: 41px;
+            }
+
+            @include desktop {
+                font-size: 36px;
+                line-height: 50px;
+            }
+
+            @include big-desktop {
+                font-size: 42px;
+                line-height: 58px;
+            }
+        }
+
+        .lodging-location {
+            font-weight: 500;
+            margin-top: 5px;
+            font-size: 14px;
+            line-height: 20px;
+
+            @include small {
+                font-size: 15.3px;
+                line-height: 21.5px;
+            }
+
+            @include tablette {
+                font-size: 16.6px;
+                line-height: 23px;
+            }
+
+            @include desktop {
+                font-size: 18px;
+                line-height: 25px;
+            }
+
+            @include big-desktop {
+                font-size: 19.3px;
+                line-height: 26.5px;
+            }
+        }
+
+        .lodging-list-tag {
+            display: flex;
+            flex-wrap: wrap;
+
+            li {
+                background-color: $primary-color;
+                border-radius: 5px;
+                margin-right: 10px;
+                margin-top: 10px;
+                min-width: 84px;
+                padding: 0 10px;
+                height: 18px;
+
+                @include small {
+                    min-width: 94px;
+                    height: 20.3px;
+                    padding: 0 10px;
+                    border-radius: 6.6px;
+                    margin-top: 13.3px;
+                }
+
+                @include tablette {
+                    border-radius: 8.3px;
+                    min-width: 104px;
+                    height: 22.6px;
+                    padding: 0 10px;
+                    margin-top: 16.6px;
+                }
+
+                @include desktop {
+                    border-radius: 10px;
+                    min-width: 115px;
+                    height: 25px;
+                    padding: 0 10px;
+                    margin-top: 20px;
+                }
+
+                @include big-desktop {
+                    border-radius: 11.6px;
+                    min-width: 125px;
+                    height: 27.3px;
+                    padding: 0 10px;
+                    margin-top: 23.3px;
+                }
+
+                span {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    color: $secondary-color;
+                    font-weight: 500;
+                    line-height: 14px;
+                    font-size: 10px;
+                    height: 100%;
+
+                    @include small {
+                        line-height: 16px;
+                        font-size: 11.3px;
+                    }
+
+                    @include tablette {
+                        line-height: 18px;
+                        font-size: 12.6px;
+                    }
+
+                    @include desktop {
+                        line-height: 20px;
+                        font-size: 14px;
+                    }
+
+                    @include big-desktop {
+                        line-height: 22px;
+                        font-size: 15.3px;
+                    }
+                }
+            }
+        }
+    }
+
+    .lodging-host {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 16px;
+
+        @include desktop {
+            flex-direction: column-reverse;
+            align-items: flex-end;
+        }
+
+        .lodging-host-rating {
+
+            i {
+                margin-right: 5px;
+                font-size: 15px;
+
+                @include small {
+                    margin-right: 6.6px;
+                    font-size: 20px;
+                }
+
+                @include tablette {
+                    margin-right: 8.2px;
+                    font-size: 25px;
+                }
+
+                @include desktop {
+                    margin-right: 0;
+                    margin-left: 10px;
+                    font-size: 30px;
+                }
+
+                @include big-desktop {
+                    margin-left: 11.6px;
+                    font-size: 35px;
+                }
+            }
+        }
+
+        .lodging-host-personn {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .lodging-host-personn-name {
+                display: flex;
+                flex-direction: column;
+
+                span {
+                    font-weight: 500;
+                    font-size: 12px;
+                    margin-right: 10.5px;
+                    text-align: end;
+
+                    @include small {
+                        font-size: 14px;
+                    }
+
+                    @include tablette {
+                        font-size: 16px;
+                    }
+
+                    @include desktop {
+                        font-size: 18px;
+                    }
+
+                    @include big-desktop {
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            img {
+                height: 32px;
+                width: 32px;
+                border-radius: 100%;
+
+                @include small {
+                    height: 42.6px;
+                    width: 42.6px;
+                }
+
+                @include tablette {
+                    height: 53.2px;
+                    width: 53.2px;
+                }
+
+                @include desktop {
+                    height: 64px;
+                    width: 64px;
+                }
+
+                @include big-desktop {
+                    height: 74.6px;
+                    width: 74.6px;
+                }
+            }
+        }
+    }
+}
