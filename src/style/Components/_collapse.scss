@@ -105,33 +105,34 @@
             opacity 0.4s ease-in-out,
             height 0.4s 0.4s ease-in-out;
 
+
         .description {
             pointer-events: none;
             font-size: 12px;
             padding: 23px 7px 23px 11px;
-            line-height: 17.11px;
+            line-height: 17px;
 
             @include small {
-                font-size: 16px;
+                font-size: 14px;
                 padding: 27.3px 13.6px 27.3px 13.3px;
-                line-height: 22.81px;
+                line-height: 20px;
             }
 
             @include tablette {
-                font-size: 20px;
+                font-size: 16px;
                 padding: 31.6px 20.2px 31.6px 15.6px;
-                line-height: 28.51px;
+                line-height: 23px;
             }
 
             @include desktop {
-                font-size: 24px;
-                padding: 36px 27px 36px 18px;
-                line-height: 34.22px;
+                font-size: 18px;
+                line-height: 26px;
+                padding: 22px 30px;
             }
 
             @include big-desktop {
-                font-size: 28px;
-                line-height: 39.91px;
+                font-size: 20px;
+                line-height: 29px;
             }
         }
     }

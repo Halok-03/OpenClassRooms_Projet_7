@@ -75,15 +75,19 @@ const Lodging = () => {
                         </div>
                     </div>
                 </div>
-                <div>
-                    <Collapse
-                        title="Description"
-                        description={description} />
-                    <Collapse
-                        title="Equipements"
-                        description={equipments}
-
-                    />
+                <div className="lodging-collapse">
+                    <div className="lodging-description">
+                        <Collapse
+                            title="Description"
+                            description={description}
+                        />
+                    </div>
+                    <div className="lodging-equipements">
+                        <Collapse
+                            title="Equipements"
+                            description={equipments}
+                        />
+                    </div>
                 </div>
             </div>
             <Footer />

@@ -263,3 +263,78 @@
         }
     }
 }
+
+.lodging-collapse {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+
+    @include desktop {
+        flex-direction: row;
+        gap: 5%;
+    }
+
+    .lodging-description {
+        width: 100%;
+
+        @include desktop {
+            width: 50%;
+        }
+    }
+
+    .lodging-equipements {
+        width: 100%;
+
+        @include desktop {
+            width: 50%;
+        }
+
+        ul {
+            padding: 17px 7px 0 11px;
+            pointer-events: none;
+
+            @include small {
+                padding: 21.3px 8.6px 0 14px;
+            }
+
+            @include tablette {
+                padding: 25.6px 10.2px 0 17px;
+            }
+
+            @include desktop {
+                padding: 30px 12px 27px 20px;
+            }
+
+            @include big-desktop {
+                padding: 34.3px 13.6px 0 23px;
+            }
+
+            .description-item {
+                line-height: 17px;
+                font-size: 12px;
+                pointer-events: none;
+
+                @include small {
+                    line-height: 19.6px;
+                    font-size: 14px;
+                }
+
+                @include tablette {
+                    line-height: 22.2px;
+                    font-size: 16px;
+                }
+
+                @include desktop {
+                    line-height: 25px;
+                    font-size: 18px;
+                }
+
+                @include big-desktop {
+                    line-height: 27.6px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

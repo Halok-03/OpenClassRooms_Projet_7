@@ -16,6 +16,26 @@ const Collapse = (props) => {
         setHeightEl(`${refHeight.current.scrollHeight}px`)
     }, [])
 
+    const typeOfDescription = () => {
+        if (typeof props.description === 'object') {
+            return <ul>
+                {props.description.map((e, index) => (
+                    <li
+                        key={index}
+                        aria-hidden={toggle ? "true" : "false"}
+                        className="description-item"
+                    >{e}</li>
+                ))}
+            </ul>
+        } else {
+            return <p
+                aria-hidden={toggle ? "true" : "false"}
+                className="description"
+            >
+                {props.description}</p>
+        }
+    }
+
     return (
         <div className="collapse">
             <div
@@ -34,11 +54,7 @@ const Collapse = (props) => {
                 }
                 style={{ height: toggle ? `${heightEl}` : "0px" }}
             >
-                <p
-                    aria-hidden={toggle ? "true" : "false"}
-                    className="description "
-                >
-                    {props.description}</p>
+                {typeOfDescription()}
             </div>
         </div>
     );
